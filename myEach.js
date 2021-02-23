@@ -1,8 +1,11 @@
 //FOR EACH
 
-//“myEach” will take in an array of elements and execute any callback function on each of those elements.
+/*
+“myEach” will take in an array of elements and execute any callback function on each of those elements.
 
-
+call back is invoked with three arguments:
+    the value of the element, the index of the element, the Arry object being traversed
+*/
 Array.prototype.myEach = function(callback) {
     for (let i = 0; i < this.length; i++) {
         callback(this[i], i, this);
