@@ -23,23 +23,21 @@ Array.prototype.mySome = function(callback) {
 }
 
 // Testing
-const arr = [1, 2, 3, 4, 5];
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [1, 3, 7, 21, 33];
+const arr3 = [-6, 15, 7];
 
 function isEvenNumber(number) {
     return (number % 2 == 0);
 }
 
-//apply callback to each element in arr
-const cb = (x) => {
-    isEvenNumber(x);
-};
-
-
 const print = (x) => {
+  
     console.log(x);
 };
 
-// arr.mySome(cb);
-console.log(arr.mySome(cb));
+console.log(arr1.mySome(isEvenNumber));
+console.log(arr2.mySome(isEvenNumber));
+console.log(arr3.mySome(isEvenNumber));
 // print("--");
-// arr.mySome(print);
+// arr1.mySome(print);
