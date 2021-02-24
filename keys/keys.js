@@ -1,11 +1,16 @@
-Object.keys()
-
 //Without using the native “Object.keys()” method of JavaScript, compose a function titled “grabKeys” that will take in an 
 //object and return all of the keys of the key:value pairs of that object.
 
-let objects= {a:'54', b: 'ki', c: 'so'};
-for (var key in objects) 
+const arr1 = [1,2,3];
+
+Array.prototype.grabKeys= function(callback) 
 {
-    var valueforkey = objects[key];
+    for (var key in arr1) 
+    {
+        var valueforkey = arr1[key];
+        
+    }
     console.log(valueforkey);
 }
+
+console.log(arr1.grabKeys);
