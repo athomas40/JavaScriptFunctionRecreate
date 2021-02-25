@@ -18,4 +18,4 @@ Object.grabKeys= function(arr)
 
 const arr1 = { 0: 'a', 1: 'b', 2: 'c'};
 
-console.log(Object.grabKeys(arr1));
+console.log(Object.grabKeys(arr1)); //['0', '1', '2']

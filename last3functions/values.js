@@ -16,4 +16,5 @@ Object.grabValue= function(arr)
 
 //Testing
 const obj = { foo: 'bar', baz: 42 };
+
 console.log(Object.values(obj)); // ['bar', 42]
